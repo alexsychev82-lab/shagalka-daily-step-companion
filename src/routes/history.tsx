@@ -71,7 +71,7 @@ function HistoryPage() {
                 <li key={k} className="flex items-center gap-3 px-3 py-3">
                   {done ? <CheckCircle2 className="h-5 w-5 text-success" /> : <span className="h-5 w-5 rounded-full border-2 border-muted" />}
                   <div className="flex-1">
-                    <p className="font-medium capitalize">{new Date(y, m - 1, d).toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long" })}</p>
+                    <p className="font-medium capitalize">{new Date(y ?? 0, (m ?? 1) - 1, d ?? 1).toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long" })}</p>
                     <p className="text-xs text-muted-foreground">{kmFor(steps, settings).toFixed(2)} км (оценка)</p>
                   </div>
                   <p className="font-display font-semibold tabular-nums">{fmt(steps)}</p>

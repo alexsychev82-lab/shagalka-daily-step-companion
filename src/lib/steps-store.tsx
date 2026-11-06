@@ -125,10 +125,10 @@ export function StepsProvider({ children }: { children: ReactNode }) {
       const field = demo ? "demo" : "real";
       const arr = [...d[field]];
       const h = new Date().getHours();
-      if (n >= 0) arr[h] += n;
+      if (n >= 0) arr[h] = (arr[h] ?? 0) + n;
       else {
         let rem = -n;
-        for (let i = h; i >= 0 && rem > 0; i--) { const take = Math.min(arr[i], rem); arr[i] -= take; rem -= take; }
+        for (let i = h; i >= 0 && rem > 0; i--) { const cur = arr[i] ?? 0; const take = Math.min(cur, rem); arr[i] = cur - take; rem -= take; }
       }
       return { ...d, [field]: arr };
     });
