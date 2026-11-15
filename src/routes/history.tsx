@@ -10,6 +10,8 @@ export const Route = createFileRoute("/history")({
       { name: "description", content: "Шаги за последние дни в Alex'step." },
       { property: "og:title", content: "История — Alex'step" },
       { property: "og:description", content: "История шагов за последние 30 дней." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: HistoryPage,

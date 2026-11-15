@@ -11,6 +11,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Шаги за сегодня, прогресс к цели, дистанция, калории и GPS-прогулка." },
       { property: "og:title", content: "Сегодня — Alex'step" },
       { property: "og:description", content: "Шагомер Alex'step: прогресс к дневной цели и GPS-прогулки." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Today,

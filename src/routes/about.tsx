@@ -9,6 +9,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Как Alex'step считает шаги, ограничения браузера и планы на нативное Android-приложение." },
       { property: "og:title", content: "Как это работает — Alex'step" },
       { property: "og:description", content: "Честно об ограничениях браузерного шагомера." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: About,
