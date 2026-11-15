@@ -11,6 +11,8 @@ export const Route = createFileRoute("/settings")({
       { name: "description", content: "Цель на день, параметры тела, демо-режим и приватность в Alex'step." },
       { property: "og:title", content: "Настройки — Alex'step" },
       { property: "og:description", content: "Настройте цель шагов и параметры для оценок." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: SettingsPage,

@@ -47,6 +47,12 @@ Continue developing this project in the [Lovable editor](https://lovable.dev/pro
 
 ## Development
 
+## Android / APK
+
+Манифест и иконки подготовлены. Пошаговая инструкция для отдельной Android-оболочки: [docs/android-apk.md](docs/android-apk.md).
+Это подготовка, а не готовый APK: оболочка требует опубликованного сайта и не добавляет нативный подсчёт шагов или работу без интернета.
+
+
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
